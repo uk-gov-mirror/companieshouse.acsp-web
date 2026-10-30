@@ -5,7 +5,7 @@ import { getRedirectUrl, parseTokenExpiry, RedirectClaims, RedirectOptions } fro
 
 // Hard-coded until the transactions web presenter endpoint contract is finalised
 export const getPresenterRedirectPath = (transactionId: string): string =>
-    `/transaction/${encodeURIComponent(transactionId)}/presenter`;
+    `/transaction/${encodeURIComponent(transactionId)}/presenter/what-is-your-role`;
 
 export interface PresenterInputRedirectClaims extends RedirectClaims {
     form_type: string;
